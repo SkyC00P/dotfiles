@@ -53,8 +53,8 @@ vnoremap <C-C> "+y
 vnoremap <BS> d
 
 " CTRL-D 删除当前行
-nnoremap <C-S> dd<enter>
-inoremap <C-S> <C-O>dd<enter>
+nnoremap <C-D> dd<enter>
+inoremap <C-D> <C-O>dd<enter>
 
 " ctrl+s 保存
 noremap <C-S>        :update<CR> 
