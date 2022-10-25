@@ -23,14 +23,6 @@ F_log_info(){
   fi
 }
 
-# warn级别或是需要引起用户重视的日志 (String:msg) -> []
-Func_log_note(){
-  local _msg="$1"
-  if [[ x"${_msg}" != x"" ]];then
-    echo -e "\033[33m[Note] $* \033[0m"
-  fi
-}
-
 # error级别的日志 (String:msg) -> []
 Func_log_err(){
   local _msg="$1"
