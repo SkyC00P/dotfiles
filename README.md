@@ -16,3 +16,8 @@ File_Path = 脚本路径
 
 ## Centos docker 安装脚本
 
+开发最新版本
+
+## Centos RabbitMQ 单实例脚本
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/SkyC00P/dotfiles/dev/component/rabbitmq/online_install.sh)"
