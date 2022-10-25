@@ -67,7 +67,7 @@ grep "tcp://0.0.0.0:2375" ${path__} || sed -i "s|${key__}=.*$|${key__}=${value__
 
 F_log_info "[7] 启动docker并校验是否安装成功"
 sudo systemctl daemon-reload
-sudo systemctl start docker
+sudo systemctl restart docker
 
 # 确认启动成功
 sudo docker run hello-world;
