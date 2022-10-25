@@ -71,7 +71,7 @@ sudo systemctl start docker
 
 # 确认启动成功
 sudo docker run hello-world;
-$? && F_log_info " --> 启动成功" || Func_log_err " --> 启动失败"
+test $? == 0 && F_log_info " --> 启动成功" || Func_log_err " --> 启动失败"
 
 curl http://localhost:2375/version
-$? && F_log_info " --> 远程控制正常" || Func_log_err " --> 远程控制异常"
+test $? == 0 && F_log_info " --> 远程控制正常" || Func_log_err " --> 远程控制异常"
